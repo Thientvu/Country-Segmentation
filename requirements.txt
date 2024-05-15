@@ -5,3 +5,5 @@ matplotlib
 jupyterlab
 scikit-learn
 tensorflow
+tensorflow-metal
+tensorflow-macos

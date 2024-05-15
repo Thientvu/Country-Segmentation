@@ -1,8 +1,8 @@
 ## Setting up environment
 1. Make sure you have [Miniconda](https://docs.anaconda.com/free/miniconda/) installed on your computer
-2. Create a new environment that uses python 3.9.18
+2. Create a new environment that uses python 3.8
     ```
-    conda create --name [your_env_name] python=3.9.18
+    conda create --name [your_env_name] python=3.8
     ```
 3. Once the environment has been created, activate your enviroment
     ```
