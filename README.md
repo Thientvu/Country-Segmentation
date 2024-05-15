@@ -1,4 +1,4 @@
-# Country Categorization for Aid Allocation
+# Country Development Categorization Project
 
 ## 1. Introduction
 
@@ -34,13 +34,13 @@ The data was sourced from Kaggle and is available in CSV format. [Kaggle Dataset
 The cleaned dataset consists of several socio-economic and health indicators for each country. Key features include:
 - Child Mortality
 - Exports of goods and services per capita
-- Spending on health
+- Spending on Health
 - Imports of goods and services per capita
 - Income
 - Inflation
 - Life Expectancy
 - Total Fertility
-- GDP per Capita
+- GDP per capita
 
 ## 4. Exploratory Data Analysis (EDA)
 
@@ -93,51 +93,51 @@ The silhouette score was used to measure the similarity within clusters compared
 ### Key Outcomes
 The K-Means clustering algorithm categorized the countries into three distinct clusters based on socio-economic and health factors. This allows for targeted recommendations on where the NGO should focus its aid efforts.
 
-#### Cluster 0: Characteristics of Developing Nations
-- Child Mortality: Low to moderate
-- Export and Import Rates: Mid-range
-- Health Expenditure: Low
-- Income: Low
-- Inflation: Moderate
-- Life Expectancy: Moderate to high
-- Fertility Rates: Low to moderate
-- GDP per Capita: Low
+### Conclusions
+- **Cluster 0: Developed Nations**
+    - **Child Mortality**: Low rates.
+    - **Exports and Imports**: Moderate to high.
+    - **Health Expenditures**: Higher spending on health.
+    - **Income**: Generally higher.
+    - **Inflation**: Lower.
+    - **Life Expectancy**: High.
+    - **Fertility Rates**: Lower.
+    - **GDP per Capita**: High, with peaks around $40,000.
+- **Cluster 1: Underdeveloped Nations**
+    - **Child Mortality**: High rates.
+    - **Exports and Imports**: Lower.
+    - **Health Expenditures**: Lower.
+    - **Income**: Predominantly low.
+    - **Inflation**: Higher.
+    - **Life Expectancy**: Significantly lower.
+    - **Fertility Rates**: Higher.
+    - **GDP per Capita**: Very low, generally below $2,500.
+- **Cluster 2: Developing Nations**
+    - **Child Mortality**: Moderate to high.
+    - **Exports and Imports**: Varied, but generally lower.
+    - **Health Expenditures**: Moderate.
+    - **Income**: Ranges from low to moderate.
+    - **Inflation**: Varied.
+    - **Life Expectancy**: Moderate.
+    - **Fertility Rates**: Moderate to high.
+    - **GDP per Capita**: Mostly below $10,000.
 
-#### Cluster 1: Characteristics of Developed Nations
-- Child Mortality: Very low
-- Export and Import Rates: Moderate to high
-- Health Expenditure: Moderate
-- Income: High
-- Inflation: Low
-- Life Expectancy: High
-- Fertility Rates: Low
-- GDP per Capita: High
-
-#### Cluster 2: Characteristics of Underdeveloped Nations
-- Child Mortality: High
-- Export and Import Rates: Wide distribution, including very high values
-- Health Expenditure: Low
-- Income: Very low
-- Inflation: High
-- Life Expectancy: Low
-- Fertility Rates: High
-- GDP per Capita: Very low
-
-### Country Recommendations
-The bottom 10 countries in Cluster 2 should be prioritized for receiving aid from HELP International. These countries are:
-- Solomon Islands
-- Vanuatu
-- Fiji
-- Micronesia, Fed. Sts.
-- Guyana
-- Cambodia
-- India
-- Mongolia
-- Myanmar
-- Turkmenistan
+### Country Recommendations for HELP International Aid Prioritization
+Based on the criteria of life expectancy, child mortality, and GDP per capita, the following countries in Cluster 2 have been identified as priorities for receiving aid from HELP International:
+- Haiti
+- Lesotho
+- Central African Republic
+- Zambia
+- Malawi
+- South Africa
+- Mozambique
+- Sierra Leone
+- Guinea-Bissau
+- Afghanistan
 
 ### Challenges Faced
-Varying scales of the features were a challenge, mitigated by normalizing the data. Determining the optimal number of clusters required careful consideration using the elbow method.
+- Varying scales of the features were a challenge, mitigated by normalizing the data.
+- Determining the optimal number of clusters required careful consideration using the elbow method.
 
 ### Future Work
 Potential improvements include performing a more granular analysis by considering sub-clusters within the main clusters to provide even more targeted recommendations.
